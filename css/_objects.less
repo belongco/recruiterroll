@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.clearfix:after {
+  display: table;
+  clear: both;
+
+  content: '';
+}
+
+.container-fluid {
+  width: 80%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+@media (max-width: 1279px) and (min-width: 960px){
+    .container-fluid {
+        width: 90%;
+    }
+}
+@media (max-width: 960px){
+    .container-fluid {
+        width: 100%;
+    }
+}
+
+.row {
+  margin: 0 -30px;
+  padding: 15px 30px;
+  & + & {
+    margin-top: -25px;
+  }
+}
+
+.row, .container-fluid {
+  .column {
+    /* 2 column grid */
+    &.column-1-2 {
+      float: left;
+
+      width: 50%;
+    }
+
+    /* 5 column grid */
+    &.column-1-5 {
+      float: left;
+
+      width: 20%;
+    }
+    &.column-2-5 {
+      width: 40%;
+    }
+    &.column-3-5 {
+      width: 60%;
+    }
+    &.column-4-5 {
+      width: 80%;
+    }
+  }
+}
+
+@media (max-width: 1125px) {
+  .row, .container-fluid {
+    .column {
+      &.column-1-2,
+      &.column-1-5, &.column-2-5, &.column-3-5, &.column-4-5 {
+        float: none;
+        width: 100%;
+      }
+    }
+  }
+  .registration-section {
+    .form-field, .form-actions {
+      margin-top: 15px;
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .row, .container-fluid {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.button {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  outline: none;
+
+  color: white;
+  font-size: 16px;
+
+  text-decoration: none;
+  cursor: pointer;
+  &-lt-blue {
+    border-color: #36c0d4;
+    background-color: #36c0d4;
+    &.button-hollow {
+      background-color: white;
+
+      color: #36c0d4;
+    }
+  }
+}
+
+.align {
+  &-left {
+    float: left;
+  }
+  &-right {
+    float: right;
+  }
+}

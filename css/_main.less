@@ -1,0 +1,142 @@
+body {
+  &:before {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    background: url('../images/recruiter-roll-bg-full.jpg') center/cover;
+
+    content: '';
+
+    will-change: transform;
+  }
+}
+
+.header-container {
+  width: 100%;
+}
+
+.header {
+  height: 65px;
+}
+
+.main-logo {
+  width: 97px;
+
+  vertical-align: middle;
+  &-wrapper {
+    width: 100%;
+    height: 100%;
+
+    line-height: 65px;
+
+    text-align: center;
+  }
+}
+
+.content {
+  padding: 30px 30px 0;
+  border-radius: 4px 4px 0 0;
+  background-color: #3d4250;
+}
+
+.content-left {
+  float: left;
+
+  padding: 30px;
+  h2 {
+    color: white;
+    font-family: 'Averia Serif Libre', cursive;
+    font-size: 32px;
+    line-height: 40px;
+  }
+  p {
+    margin-top: 45px;
+    color: #c4c6ca;
+    font-family: Georgia, 'Times New Roman', Serif;
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+
+.content-right {
+  float: right;
+
+  padding: 30px 30px 0;
+  &-inr {
+    padding: 0 45px;
+    border-radius: 4px 4px 0 0;
+    background: white;
+  }
+}
+
+@media (max-width: 750px) {
+  .content-right {
+    padding: 0;
+    &-inr {
+      padding: 30px !important;
+      border-radius: 0;
+    }
+  }
+}
+
+.registration-section {
+  .section-heading {
+    width: 100%;
+    padding: 40px 10px 10px 10px;
+
+    text-align: center;
+    .recruiter-roll-logo {
+      max-width: 100%;
+
+      vertical-align: middle;
+    }
+  }
+  .form-field {
+    display: block;
+
+    padding: 20px 10px 0;
+    .field-title {
+      display: block;
+
+      color: #989aa1;
+      font-family: 'Proxima-Nova';
+      font-size: 12px;
+    }
+    .form-input {
+      width: 100%;
+      margin-top: 5px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 2px;
+      outline: none;
+      &:focus {
+        border-color: #ff7950;
+        outline: none;
+      }
+    }
+  }
+  .form-actions {
+    padding: 20px 10px 0;
+
+    font-family: 'Proxima-Nova';
+  }
+  .form-submit {
+    height: 40px;
+  }
+  #latest-issue {
+    height: 40px;
+  }
+  .recruiter-roll-article {
+    width: 100%;
+  }
+}
+
+@media (max-width: 750px) {
+  .registration-section .row+.row {
+    margin-top: 0;
+  }
+}
