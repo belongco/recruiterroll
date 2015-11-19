@@ -250,7 +250,7 @@ body:before {
 }
 
 .main-logo {
-	width: 88px;
+	width: 97px;
 	vertical-align: middle;
 }
 
@@ -275,7 +275,6 @@ body:before {
 .content-left h2 {
 	color: white;
 	font-family: 'Averia Serif Libre', cursive;
-	font-weight:300;
 	font-size: 32px;
 	line-height: 40px;
 }
@@ -284,13 +283,13 @@ body:before {
 	margin-top: 45px;
 	color: #c4c6ca;
 	font-family: Georgia, 'Times New Roman', Serif;
-	font-size: 15px;
-	line-height: 24px;
+	font-size: 16px;
+	line-height: 30px;
 }
 
 .content-left ul {
 	margin-top: 28px;
-	list-style-type:disc;
+	list-style-type: disc;
 	color: #c4c6ca;
 	font-family: Georgia, 'Times New Roman', Serif;
 	font-size: 15px;
@@ -298,7 +297,6 @@ body:before {
 }
 
 .content-left li {
-	/*margin-top: 45px;*/
 	color: #c4c6ca;
 	font-family: Georgia, 'Times New Roman', Serif;
 	font-size: 15px;
@@ -311,6 +309,7 @@ body:before {
 }
 
 .content-right-inr {
+	height: 496px;
 	padding: 0 45px;
 	border-radius: 4px 4px 0 0;
 	background: white;
@@ -368,6 +367,16 @@ body:before {
 
 .registration-section .recruiter-roll-article {
 	width: 100%;
+}
+
+.footer {
+	padding: 30px;
+	background: #2A303F;
+	text-align: center;
+}
+
+.footer .footer-content {
+	height: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */
